@@ -1,4 +1,4 @@
-package chatAi
+package aichat
 
 import "github.com/pluto037/pluto-go/kdxf"
 
@@ -11,10 +11,6 @@ var (
 	domianv1  = "general"
 	domianv2  = "generalv2"
 )
-
-func init() {
-
-}
 
 func Chat(question string) string {
 	return kdxf.StartChat(hostUrlv1, appid, apiSecret, apiKey, question, "11122333", domianv1)
